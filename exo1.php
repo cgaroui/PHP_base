@@ -7,5 +7,5 @@ ecrire un algorithme permettant de compter le nombre de caractères contenus dan
 <?php
 
 $phrase = "Notre formation DL commence aujourd'hui";
-$nbCaracters = strlen($phrase);
+$nbCaracters = strlen($phrase); // strlen sert à compter la longueur d'une chaine de caractères
 echo "La phrase \"$phrase\" contient $nbCaracters caractères.";
