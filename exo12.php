@@ -13,7 +13,10 @@ $tableau = [
     "Marie-Claire" => "ENG"
 ];
 
-foreach ($tableau as $prenom => $langue){
+ksort($tableau); //ksort tri tableau ordre ascendant k pour dire sur la clé (on met asort pour trier sur la valeur) sachant ds tableau c presente : clé => valeur 
+                //on rajour r pour ll'ordre descendant ex: krsort= tri sur cle ordre descendant 
+
+foreach ($tableau as $prenom => $langue){ //La boucle foreach - Parcourt un bloc de code pour chaque élément d'un tableau sans condition d'arret (plus pratique que les autres boucles)
     if ($langue == "FRA")
         echo "Salut ".$prenom."<br>";
     elseif($langue == "ESP")
@@ -21,3 +24,4 @@ foreach ($tableau as $prenom => $langue){
     else
         echo "Hello ".$prenom."<br>";
 }
+
